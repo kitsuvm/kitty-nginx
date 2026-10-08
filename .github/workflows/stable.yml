@@ -11,6 +11,10 @@ on:
       - 'stable/*'
   workflow_dispatch:
 
+concurrency:
+  group: build-stable
+  cancel-in-progress: true
+
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
