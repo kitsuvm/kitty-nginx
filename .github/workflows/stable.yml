@@ -129,7 +129,7 @@ jobs:
 
         - name: Resolve Images
           id: resolve
-          runs: |
+          run: |
             IMAGE=${{ matrix.image }}
             VERSION=${{ needs.resolve.outputs.version }}
 
