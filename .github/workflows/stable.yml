@@ -7,7 +7,6 @@ on:
     paths:
       - 'stable.Dockerfile'
       - 'stable-extra.Dockerfile'
-      - '.github/workflows/stable.yml'
     tags:
       - 'stable/*'
   workflow_dispatch:
@@ -49,6 +48,7 @@ jobs:
       fail-fast: false
       matrix:
         image: [base, extra]
+        arch: [amd64, arm64]
         include:
           - platform: linux/amd64
             runner: ubuntu-26.04
@@ -107,7 +107,8 @@ jobs:
           context: .
           file: ${{ steps.resolve.outputs.dockerfile }}
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.resolve.outputs.tag }}
+          tags: ${{ steps.meta.outputs.tag }}
+          labels: ${{ steps.meta.outputs.labels }}
           platforms: ${{ matrix.platform }}
 
   merge:
@@ -150,9 +151,10 @@ jobs:
 
         - name: Merge and Push
           run: |
-            TAG="${{ needs.resolve.outputs.tag }}"
+            TAG="${{ steps.resolve.outputs.tag }}"
             IMAGE="${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}"
+            FULL_IMAGE="${IMAGE}:${TAG}"
 
-            docker buildx imagetools create -t ${IMAGE}:${TAG} \
-              ${IMAGE}:${TAG}-amd64 \
-              ${IMAGE}:${TAG}-arm64
+            docker buildx imagetools create -t $FULL_IMAGE \
+              $FULL_IMAGE-amd64 \
+              $FULL_IMAGE-arm64
