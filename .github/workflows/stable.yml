@@ -7,6 +7,7 @@ on:
     paths:
       - 'stable.Dockerfile'
       - 'stable-extra.Dockerfile'
+      - '.github/workflows/stable.yml'
     tags:
       - 'stable/*'
   workflow_dispatch:
