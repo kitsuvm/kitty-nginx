@@ -34,7 +34,7 @@ jobs:
           EVENT_NAME="${{ github.event_name }}"
 
           if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$REF_NAME" = "main" ]; then
-            VERSION="stable-latest"
+            VERSION="stable"
           else
             VERSION="${REF_NAME#stable/}"
           fi
