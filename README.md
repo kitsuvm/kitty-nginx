@@ -6,6 +6,10 @@ NGINX web server statically compiled and with additional modules for use on dist
 
 ### 1.30.5 (Stable)
 
+- ghcr.io/kitsuvm/kitty-nginx:stable
+- ghcr.io/kitsuvm/kitty-nginx:stable-amd64
+- ghcr.io/kitsuvm/kitty-nginx:stable-arm64
+
 #### Dependencies
 
 - PCRE2 10.48
@@ -47,6 +51,10 @@ NGINX web server statically compiled and with additional modules for use on dist
 - threads
 
 ### 1.30.5-extra (Stable)
+
+- ghcr.io/kitsuvm/kitty-nginx:stable-extra
+- ghcr.io/kitsuvm/kitty-nginx:stable-extra-amd64
+- ghcr.io/kitsuvm/kitty-nginx:stable-extra-arm64
 
 #### Dependencies
 
