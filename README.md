@@ -71,3 +71,21 @@ Contains all the modules of the 1.30.5 image, plus the following additional modu
 - google/ngx_brotli master
 - leev/ngx_http_geoip2_module 3.4
 - tokers/zstd-nginx-module 0.1.1
+
+### 1.30.5-ssl (Stable)
+
+- ghcr.io/kitsuvm/kitty-nginx:stable-ssl
+- ghcr.io/kitsuvm/kitty-nginx:stable-ssl-amd64
+- ghcr.io/kitsuvm/kitty-nginx:stable-ssl-arm64
+
+#### Dependencies
+
+Contains all the dependencies of the 1.30.5-extra image, plus the following additional dependencies:
+
+- OpenSSL 3.6.5
+
+#### Modules
+
+Contains all the modules of the 1.30.5-extra image, plus the following additional modules:
+
+- phuslu/nginx-ssl-fingerprint master
