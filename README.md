@@ -89,3 +89,15 @@ Contains all the dependencies of the 1.30.5-extra image, plus the following addi
 Contains all the modules of the 1.30.5-extra image, plus the following additional modules:
 
 - phuslu/nginx-ssl-fingerprint master
+
+### 1.30.5-ja4 (Stable)
+
+- ghcr.io/kitsuvm/kitty-nginx:stable-ja4
+- ghcr.io/kitsuvm/kitty-nginx:stable-ja4-amd64
+- ghcr.io/kitsuvm/kitty-nginx:stable-ja4-arm64
+
+#### Modules
+
+Contains all the modules of the 1.30.5-extra image, plus the following additional modules:
+
+- FoxIO-LLC/ja4-nginx-module main
