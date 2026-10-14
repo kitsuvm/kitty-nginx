@@ -1,4 +1,4 @@
-FROM alpine:3.24.1 AS nginx-builder
+FROM alpine:3.24.2 AS nginx-builder
 
 ARG NGINX_VERSION=1.30.5
 ARG PCRE2_VERSION=10.48
