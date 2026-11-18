@@ -8,6 +8,7 @@ on:
       - 'stable.Dockerfile'
       - 'stable-extra.Dockerfile'
       - 'stable-ssl.Dockerfile'
+      - 'stable-ja4.Dockerfile'
       - '.github/workflows/stable.yml'
     tags:
       - 'stable/*'
@@ -49,7 +50,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image: [base, extra, ssl, ja4]
+        image:
+          - base
+          - extra
+          - ssl
+          - ja4
         arch: [amd64, arm64]
         include:
           - platform: linux/amd64
@@ -124,7 +129,11 @@ jobs:
       strategy:
         fail-fast: false
         matrix:
-          image: [base, extra, ssl, ja4]
+          image:
+            - base
+            - extra
+            - ssl
+            - ja4
 
       steps:
         - name: Set up Docker Buildx
