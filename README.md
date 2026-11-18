@@ -4,17 +4,20 @@ NGINX web server statically compiled and with additional modules for use on dist
 
 ## Images
 
-### 1.30.5 (Stable)
+### 1.31.9 (Latest)
 
-- ghcr.io/kitsuvm/kitty-nginx:stable
-- ghcr.io/kitsuvm/kitty-nginx:stable-amd64
-- ghcr.io/kitsuvm/kitty-nginx:stable-arm64
+- ghcr.io/kitsuvm/kitty-nginx:latest
+- ghcr.io/kitsuvm/kitty-nginx:latest-amd64
+- ghcr.io/kitsuvm/kitty-nginx:latest-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-arm64
 
 #### Dependencies
 
-- PCRE2 10.48
-- ZLIB 1.3.2
-- OpenSSL 4.0.3
+- PCRE2 10.49
+- ZLIB 1.4
+- OpenSSL 4.1.0
 - libxml2 2.15.4
 - libxslt 1.1.45
 - libgd 2.3.3
@@ -50,63 +53,182 @@ NGINX web server statically compiled and with additional modules for use on dist
 - stream_ssl_preread_module
 - threads
 
-### 1.30.5-extra (Stable)
+### 1.31.9-extra (Latest)
 
-- ghcr.io/kitsuvm/kitty-nginx:stable-extra
-- ghcr.io/kitsuvm/kitty-nginx:stable-extra-amd64
-- ghcr.io/kitsuvm/kitty-nginx:stable-extra-arm64
+- ghcr.io/kitsuvm/kitty-nginx:latest-extra
+- ghcr.io/kitsuvm/kitty-nginx:latest-extra-amd64
+- ghcr.io/kitsuvm/kitty-nginx:latest-extra-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-extra
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-extra-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-extra-arm64
 
 #### Dependencies
 
-Contains all the dependencies of the 1.30.5 image, plus the following additional dependencies:
+Contains all the dependencies of the 1.31.9 image, plus the following additional dependencies:
 
 - libmaxminddb 1.14.1
 - zstd 1.5.7
 
 #### Modules
 
-Contains all the modules of the 1.30.5 image, plus the following additional modules:
+Contains all the modules of the 1.31.9 image, plus the following additional modules:
 
 - giom/nginx_accept_language_module master
 - google/ngx_brotli master
 - leev/ngx_http_geoip2_module 3.4
 - tokers/zstd-nginx-module 0.1.1
 
-### 1.30.5-ssl (Stable)
+### 1.31.9-ssl (Latest)
 
-- ghcr.io/kitsuvm/kitty-nginx:stable-ssl
-- ghcr.io/kitsuvm/kitty-nginx:stable-ssl-amd64
-- ghcr.io/kitsuvm/kitty-nginx:stable-ssl-arm64
+- ghcr.io/kitsuvm/kitty-nginx:latest-ssl
+- ghcr.io/kitsuvm/kitty-nginx:latest-ssl-amd64
+- ghcr.io/kitsuvm/kitty-nginx:latest-ssl-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-ssl
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-ssl-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-ssl-arm64
 
 #### Dependencies
 
-Contains all the dependencies of the 1.30.5-extra image, plus the following additional dependencies:
+Contains all the dependencies of the 1.31.9-extra image, plus the following additional dependencies:
 
 - OpenSSL 3.6.5
 
 #### Modules
 
-Contains all the modules of the 1.30.5-extra image, plus the following additional modules:
+Contains all the modules of the 1.31.9-extra image, plus the following additional modules:
 
 - phuslu/nginx-ssl-fingerprint master
 
-### 1.30.5-ja4 (Stable)
+### 1.31.9-ja4 (Latest)
+
+- ghcr.io/kitsuvm/kitty-nginx:latest-ja4
+- ghcr.io/kitsuvm/kitty-nginx:latest-ja4-amd64
+- ghcr.io/kitsuvm/kitty-nginx:latest-ja4-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-ja4
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-ja4-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.9-ja4-arm64
+
+#### Modules
+
+Contains all the modules of the 1.31.9-extra image, plus the following additional modules:
+
+- FoxIO-LLC/ja4-nginx-module main
+
+### 1.30.7 (Stable)
+
+- ghcr.io/kitsuvm/kitty-nginx:stable
+- ghcr.io/kitsuvm/kitty-nginx:stable-amd64
+- ghcr.io/kitsuvm/kitty-nginx:stable-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-arm64
+
+#### Dependencies
+
+- PCRE2 10.49
+- ZLIB 1.4
+- OpenSSL 4.1.0
+- libxml2 2.15.4
+- libxslt 1.1.45
+- libgd 2.3.3
+
+#### Modules
+
+- file-aio
+- http_addition_module
+- http_auth_request_module
+- http_dav_module
+- http_degradation_module
+- http_flv_module
+- http_gunzip_module
+- http_gzip_static_module
+- http_image_filter_module
+- http_mp4_module
+- http_random_index_module
+- http_realip_module
+- http_secure_link_module
+- http_slice_module
+- http_ssl_module
+- http_stub_status_module
+- http_sub_module
+- http_v2_module
+- http_v3_module
+- http_xslt_module
+- mail
+- mail_ssl_module
+- pcre2-jit
+- stream
+- stream_realip_module
+- stream_ssl_module
+- stream_ssl_preread_module
+- threads
+
+### 1.30.7-extra (Stable)
+
+- ghcr.io/kitsuvm/kitty-nginx:stable-extra
+- ghcr.io/kitsuvm/kitty-nginx:stable-extra-amd64
+- ghcr.io/kitsuvm/kitty-nginx:stable-extra-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-extra
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-extra-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-extra-arm64
+
+#### Dependencies
+
+Contains all the dependencies of the 1.30.7 image, plus the following additional dependencies:
+
+- libmaxminddb 1.14.1
+- zstd 1.5.7
+
+#### Modules
+
+Contains all the modules of the 1.30.7 image, plus the following additional modules:
+
+- giom/nginx_accept_language_module master
+- google/ngx_brotli master
+- leev/ngx_http_geoip2_module 3.4
+- tokers/zstd-nginx-module 0.1.1
+
+### 1.30.7-ssl (Stable)
+
+- ghcr.io/kitsuvm/kitty-nginx:stable-ssl
+- ghcr.io/kitsuvm/kitty-nginx:stable-ssl-amd64
+- ghcr.io/kitsuvm/kitty-nginx:stable-ssl-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-ssl
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-ssl-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-ssl-arm64
+
+#### Dependencies
+
+Contains all the dependencies of the 1.30.7-extra image, plus the following additional dependencies:
+
+- OpenSSL 3.6.5
+
+#### Modules
+
+Contains all the modules of the 1.30.7-extra image, plus the following additional modules:
+
+- phuslu/nginx-ssl-fingerprint master
+
+### 1.30.7-ja4 (Stable)
 
 - ghcr.io/kitsuvm/kitty-nginx:stable-ja4
 - ghcr.io/kitsuvm/kitty-nginx:stable-ja4-amd64
 - ghcr.io/kitsuvm/kitty-nginx:stable-ja4-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-ja4
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-ja4-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.7-ja4-arm64
 
 #### Modules
 
-Contains all the modules of the 1.30.5-extra image, plus the following additional modules:
+Contains all the modules of the 1.30.7-extra image, plus the following additional modules:
 
 - FoxIO-LLC/ja4-nginx-module main
 
-### 1.31.5 (Latest)
+### 1.31.5
 
-- ghcr.io/kitsuvm/kitty-nginx:latest
-- ghcr.io/kitsuvm/kitty-nginx:latest-amd64
-- ghcr.io/kitsuvm/kitty-nginx:latest-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-arm64
 
 #### Dependencies
 
@@ -148,11 +270,11 @@ Contains all the modules of the 1.30.5-extra image, plus the following additiona
 - stream_ssl_preread_module
 - threads
 
-### 1.31.5-extra (Latest)
+### 1.31.5-extra
 
-- ghcr.io/kitsuvm/kitty-nginx:latest-extra
-- ghcr.io/kitsuvm/kitty-nginx:latest-extra-amd64
-- ghcr.io/kitsuvm/kitty-nginx:latest-extra-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-extra
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-extra-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-extra-arm64
 
 #### Dependencies
 
@@ -170,11 +292,11 @@ Contains all the modules of the 1.31.5 image, plus the following additional modu
 - leev/ngx_http_geoip2_module 3.4
 - tokers/zstd-nginx-module 0.1.1
 
-### 1.31.5-ssl (Latest)
+### 1.31.5-ssl
 
-- ghcr.io/kitsuvm/kitty-nginx:latest-ssl
-- ghcr.io/kitsuvm/kitty-nginx:latest-ssl-amd64
-- ghcr.io/kitsuvm/kitty-nginx:latest-ssl-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-ssl
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-ssl-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-ssl-arm64
 
 #### Dependencies
 
@@ -190,12 +312,110 @@ Contains all the modules of the 1.31.5-extra image, plus the following additiona
 
 ### 1.31.5-ja4 (Latest)
 
-- ghcr.io/kitsuvm/kitty-nginx:latest-ja4
-- ghcr.io/kitsuvm/kitty-nginx:latest-ja4-amd64
-- ghcr.io/kitsuvm/kitty-nginx:latest-ja4-arm64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-ja4
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-ja4-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.31.5-ja4-arm64
 
 #### Modules
 
 Contains all the modules of the 1.31.5-extra image, plus the following additional modules:
+
+- FoxIO-LLC/ja4-nginx-module main
+
+### 1.30.5
+
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-arm64
+
+#### Dependencies
+
+- PCRE2 10.48
+- ZLIB 1.3.2
+- OpenSSL 4.0.3
+- libxml2 2.15.4
+- libxslt 1.1.45
+- libgd 2.3.3
+
+#### Modules
+
+- file-aio
+- http_addition_module
+- http_auth_request_module
+- http_dav_module
+- http_degradation_module
+- http_flv_module
+- http_gunzip_module
+- http_gzip_static_module
+- http_image_filter_module
+- http_mp4_module
+- http_random_index_module
+- http_realip_module
+- http_secure_link_module
+- http_slice_module
+- http_ssl_module
+- http_stub_status_module
+- http_sub_module
+- http_v2_module
+- http_v3_module
+- http_xslt_module
+- mail
+- mail_ssl_module
+- pcre2-jit
+- stream
+- stream_realip_module
+- stream_ssl_module
+- stream_ssl_preread_module
+- threads
+
+### 1.30.5-extra
+
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-extra
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-extra-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-extra-arm64
+
+#### Dependencies
+
+Contains all the dependencies of the 1.30.5 image, plus the following additional dependencies:
+
+- libmaxminddb 1.14.1
+- zstd 1.5.7
+
+#### Modules
+
+Contains all the modules of the 1.30.5 image, plus the following additional modules:
+
+- giom/nginx_accept_language_module master
+- google/ngx_brotli master
+- leev/ngx_http_geoip2_module 3.4
+- tokers/zstd-nginx-module 0.1.1
+
+### 1.30.5-ssl
+
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-ssl
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-ssl-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-ssl-arm64
+
+#### Dependencies
+
+Contains all the dependencies of the 1.30.5-extra image, plus the following additional dependencies:
+
+- OpenSSL 3.6.5
+
+#### Modules
+
+Contains all the modules of the 1.30.5-extra image, plus the following additional modules:
+
+- phuslu/nginx-ssl-fingerprint master
+
+### 1.30.5-ja4
+
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-ja4
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-ja4-amd64
+- ghcr.io/kitsuvm/kitty-nginx:1.30.5-ja4-arm64
+
+#### Modules
+
+Contains all the modules of the 1.30.5-extra image, plus the following additional modules:
 
 - FoxIO-LLC/ja4-nginx-module main
